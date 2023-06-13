@@ -13,5 +13,6 @@ def order_injection(url):
             print("Total number of columns are {}".format(i - 1))
             return i
 
-url = 'https://0a5f00fd03b033e38024901b00b90004.web-security-academy.net/filter?category=Pets'
+#url = 'https://0a5f00fd03b033e38024901b00b90004.web-security-academy.net/filter?category=Pets'
+url = 'https://0a54006703874062818c70830065003b.web-security-academy.net/filter?category=Gifts'
 cols = order_injection(url)
