@@ -3,7 +3,9 @@ import requests
 ORDERpayloads = ["' ORDER BY "]
 def replaceNth(s,source,target,n):
     '''
-    The function creates a list comprehension called inds to find all the starting indices where the source substring is found within the input string s. It checks if a substring of s starting from each index and having the same length as the source substring is equal to the source substring. The indices where this condition is true are stored in the inds list.
+    The function creates a list comprehension called inds to find all the starting indices where the source substring is found within the input string s. 
+    It checks if a substring of s starting from each index and having the same length as the source substring is equal to the source substring. 
+    The indices where this condition is true are stored in the inds list.
     The function checks if the length of the inds list is less than n. If so, it means there are not enough occurrences of the source substring to replace, and the function returns None or raises an error.
     The input string s is converted into a list of characters using the list() function. This is done because string objects are immutable in Python, and lists allow modifications.
     The nth occurrence index in the inds list is accessed by inds[n-1]. The n-1 index is used because Python lists are zero-based.
