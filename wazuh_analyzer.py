@@ -1,7 +1,7 @@
 """
 wazuh_analyzer.py
 ─────────────────────────────────────────────────────────────────────────────
-Wazuh / SIEM JSON Log Analyzer  —  SOC Tool v3
+Wazuh / SIEM JSON Log Analyzer  —  SOC Tool 
 ─────────────────────────────────────────────────────────────────────────────
 """
 
@@ -488,7 +488,7 @@ def main():
     st.markdown(
         """
         <h1 style='margin-bottom:2px'>🛡️ Wazuh SIEM Analyzer
-            <sup style='font-size:0.5em;color:#888'>v3</sup></h1>
+        </h1>
         <p style='color:#888;margin-top:0'>
         SOC-grade detection · MITRE ATT&amp;CK · Correlation · Timeline ·
         <b>Clickable JSON drill-down</b>
